@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
  
 # OpenSSL requires the port number.
-SERVER=$1:443                   #### this is a Variable passed from the Command line
+SERVER=$1                   #### this is a Variable passed from the Command line
 DELAY=1
 ciphers=$(openssl ciphers 'ALL:eNULL' | sed -e 's/:/ /g')
  
